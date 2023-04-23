@@ -48,7 +48,7 @@ html, body {
   width: 100%;
   height: auto;
   background-color: red;
-  background: url(./images/rectangle-1.png) no-repeat top left;
+  background: url(../images/rectangle-1.png) no-repeat top left;
   background-size: 99% 100%;
   padding: 150px 0 50px;
 }
@@ -212,7 +212,7 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(./images/hero\ image.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(../images/hero\ image.png);
 }
 .frame-3{
   height:4rem;
@@ -1060,7 +1060,7 @@ testimonials *****/
   background-color: var(--black);
   min-height: 70vh !important;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(./images/v12_2.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url(../images/v12_2.png);
   overflow: hidden;
   background-size:cover;  
   background-position: center;
