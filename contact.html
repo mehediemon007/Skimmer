@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Font+Name">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/root.css">
+  </head>
+  <body>
+
+ <!--hero section start-->   
+    <section class ="hero">
+
+    
+    <header class="nav" >
+        <img class="skimmer-skiff-bird-logo2-1" src="/images/skimmer-skiff-bird-logo2-1-1@2x.png" alt="skimmer-skiff-bird-logo2 1" />
+        <div class="frame-1" id="frame-1">
+          
+          <div class="frame-3">
+            <a href = "index.html"><button class="poppins-normal-black-20px">Home</button></a>
+          </div>
+          <div class="frame-3">
+            <a href = "about.html"><button class="poppins-normal-black-20px">About</button></a>
+          </div>
+          <div class="frame-3">
+            <a href = "skiff.html"> <button class="poppins-normal-black-20px">Skiff</button></a>
+          </div>
+          <div class="frame-3">
+            <a href = "service.html"> <button class="poppins-normal-black-20px">Service</button></a>
+          </div>
+   
+          <div class="frame-3">
+            <a href = "contact.html"><button class="poppins-normal-black-20px">Contact</button></a>
+          </div>
+          <div class="group-1">
+            <div class="facebook_white"></div>
+            <div class="youtube_white">
+              <div class="youtube">
+              </div>
+        </div>
+      </div>
+    </div>
+       
+          <button class="group-631774" id="group-631774">
+          <div class="rectangle-1"></div>
+          <div class="rectangle-1"></div>
+          <div class="rectangle-1"></div>
+        </button>
+          
+          <button class="group-631774" id="nav_toggle-close"><img
+            class="vector"
+            src="/images/vector@2x.png"
+            alt="Vector"/>
+            
+        
+      <div>
+     
+
+      </header>
+
+    
+
+      <!-- end of nav-->
+
+      <div class="group-4">
+        <div class="rectangle-3"></div>
+       
+      </div>
+
+      
+      <div class="group-2">
+        <h1 class="place ">CONTACT</h1>
+        <p class="lorem-ipsum-dolor-si text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          <br>Nunc vulputate libero et velit interdum, 
+          <br>ac aliquet odio mattis
+        </p>
+  
+      </div>
+      
+      <div class="group-3">
+        <div class="rectangle-2-1"></div>
+        <img
+          class="material-symbolsdirections-boat"
+          src="/images/material-symbols-directions-boat.svg"
+          alt="material-symbols:directions-boat"
+        />
+      </div>
+      
+
+      <div class="custom-shape-divider-bottom-1677532505">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </section>
+
+<section class = "contact">
+    <div class="group-631790">
+      <div class="group-631789">
+        <div class="ellipse-1-1"></div>
+        <p class="we-encourage-you-to-connect-with-us">WE ENCOURAGE YOU TO CONNECT WITH US</p>
+        <p class="by-clicking-the-con">
+          <span class="span0">By clicking the “Contact Me” button, you consent to the processing of personal data and agree to the </span
+          ><span class="span1">privacy policy</span>
+        </p>
+      </div>
+      <div class="group-9831">
+        <div class="group-98">
+          <!--contact form-->
+          <form id="contact-form" method="post" action="send-email.php">
+          <div class="overlap-group">
+            <input type="text" class =" name poppins-normal-cod-gray-14px" id = "name" placeholder="Name *" required >
+          </div>
+        </div>
+        <div class="group-98">
+          <div class="overlap-group">
+            <input type="text" class =" email poppins-normal-cod-gray-14px" id = "Email" placeholder="Email *" required >
+
+          </div>
+        </div>
+        <div class="group-98">
+          <div class="overlap-group">
+            <input type="text" class ="phone poppins-normal-cod-gray-14px" id = "Phone" placeholder="Phone*" required >
+          </div>
+        </div>
+        <div class="group-98">
+          <div class="overlap-group3">
+            <textarea type="text" class ="message poppins-normal-cod-gray-14px" id = "Message" placeholder="Message*" required ></textarea>
+          </div>
+        </div>
+     
+        <div class="button-2 button-3" type = "submit">
+          <button><div class="discover-1">SUBMIT</div></button>
+        </form>
+        <!--end contact form-->
+        </div>
+      </div>
+    </div>
+    </section>
+  
+      <script>
+$(document).ready(function() {
+  $('#contact-form').submit(function(event) {
+    event.preventDefault(); // prevent the default form submission
+
+    // get the form data
+    var formData = $(this).serialize();
+
+    // submit the form data via AJAX
+    $.ajax({
+      type: 'POST',
+      url: 'joshchandler72@gmail.com', // replace with the path to your PHP file
+      data: formData,
+      success: function(response) {
+        // handle success response
+        alert('Thank you for contacting us!');
+        $('#contact-form')[0].reset();
+      },
+      error: function(xhr, status, error) {
+        // handle error response
+        alert('There was an error sending your message. Please try again later.');
+      }
+    });
+  });
+});
+      </script>
+    </body>
+    </html>
