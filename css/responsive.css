@@ -1,0 +1,113 @@
+@media only screen and (max-width:1099px){
+    .nav,
+    .ourskiffpage1,
+    .our-services .component-container-1 .comp,
+    .contactuspage1,
+    .footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav{
+        justify-content: space-between;
+    }
+
+    .nav .frame-3{
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 4px;
+    }
+
+    .aboutpage1 .group-5,
+    .aboutpage1 .group-7{
+        width: 100%;
+    }
+
+    .our-services .component-container-1 .comp .vector-2{
+        width: 40px;
+        height: 40px;
+    }
+
+    .about-skimmer-skiffs{
+        padding: 80px 5%;
+        min-width: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .hero{
+        background-size: 98% 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+
+    .nav{
+        height: 10vh;
+        left: 0;
+        right: 0;
+    }
+    
+    .frame-1{
+        top: 100%;
+        width: 100%;
+    }
+
+    .group-631774{
+        position: relative;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .contactpage1{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contactpage1 p,
+    .contactpage1 span{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contactpage1 input,
+    .contactpage1 .button-4{
+        max-width: 100%;
+    }
+
+    .our-services .component-container-1 .comp > div{
+        flex-wrap: wrap;
+    }
+
+    .our-services .comp p{
+        margin-left: 0;
+    }
+
+    .by-clicking-the-con{
+        padding-top: 0;
+    }
+
+    .footer{
+        padding: 80px 5%;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .our-services .comp p{
+        display: none !important;
+    }
+
+    .frame-1-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 24px;
+        margin-left: 0;
+    }
+}

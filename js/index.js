@@ -10,8 +10,27 @@
             items:1
         },
         600:{
-            items:3
+            items:2
+        },
+        1099:{
+          items: 3
         }
+    }
+  })
+
+  $('.skiffs-slider').owlCarousel({
+    loop:true,
+    margin:16,
+    nav:false,
+    responsive:{
+        0:{
+            items:1,
+            nav: true
+        },
+        600:{
+            items:2,
+            nav: false
+        },
     }
   })
 

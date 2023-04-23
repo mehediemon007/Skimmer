@@ -49,7 +49,7 @@ html, body {
   height: auto;
   background-color: red;
   background: url(/images/rectangle-1.png) no-repeat top left;
-  background-size: 100% 100%;
+  background-size: 99% 100%;
   padding: 150px 0 50px;
 }
 
@@ -514,8 +514,8 @@ font-size: 20px;
 /*start of about skimmers main page */
 
 .ourskiffpage1{
-  padding-left:16.5%;
-  padding-right:16.5%;
+  padding-left:10%;
+  padding-right:10%;
   align-items: center;
 }
 
@@ -646,6 +646,10 @@ font-size: 20px;
   align-items: center;
 }
 
+.skiffs-slider .owl-item{
+  background-color: transparent;
+}
+
 .component {
   align-items: center;
   background-color: var(--f8);
@@ -655,7 +659,6 @@ font-size: 20px;
   flex-direction: column;
   min-height: 25%;
   padding: 1px 0;
-  width: 50%;
   object-fit: cover;
   border-top-right-radius: 8%;
   border-top-left-radius: 8%;
