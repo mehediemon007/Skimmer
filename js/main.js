@@ -25,15 +25,15 @@
         
     }
 
-    win.on('scroll', function () {
+    // win.on('scroll', function () {
 
-        if (win.scrollTop() > 150) {
-            totop.fadeIn();
-        } else {
-            totop.fadeOut();
-        }
+    //     if (win.scrollTop() > 150) {
+    //         totop.fadeIn();
+    //     } else {
+    //         totop.fadeOut();
+    //     }
         
-    });
+    // });
 
     var mobileMenuIcon = $('.mobile-menu-icon');
 
