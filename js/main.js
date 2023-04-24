@@ -6,7 +6,7 @@
 
     var totop = $('#toTop'),
         win = $(window),
-        videoLightbox = $('.hom-video-lightbox');
+        videoLightbox = $('.skim-video-lightbox');
 
     totop.on('click', function () {
 
@@ -42,7 +42,7 @@
         mobileMenuIcon.on('click', function (e) {
             e.preventDefault();
             $(this).toggleClass('open');
-            $('.hom-nav-menu').slideToggle();
+            $('.skim-nav-menu').slideToggle();
         });
 
     }
@@ -341,7 +341,7 @@
 
     // Sticky Nav
 
-    const header = document.querySelector(".hom-header");
+    const header = document.querySelector(".skim-header");
     window.onscroll = ()=>{
         this.scrollY > 50 ? header.classList.add("sticky") : header.classList.remove("sticky");
     }
