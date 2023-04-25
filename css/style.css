@@ -891,6 +891,11 @@ input[type="radio"]:checked + label .label-arrow path{
     background-color: var(--primary-color);
 }
 
+.single-feature .content h6{
+    font: 300 28px/29px var(--body-font);
+    margin: 16px 0;
+}
+
 /* -----------------------------------
     About Us
 -------------------------------------*/

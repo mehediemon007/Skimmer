@@ -200,6 +200,10 @@
         margin-top: 50px;
     }
 
+    .pt-90 {
+        padding-top: 50px !important;
+    }
+
     .skim-header{
         padding: 16px 0;
     }
@@ -315,8 +319,22 @@
         margin-bottom: 50px;
     }
 
+    .services-2 li label h5{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .services-2 .service-content p{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
     .service-list li input[type="radio"]:checked ~ .service-content-wpr{
         height: 410px;
+    }
+
+    .services-2 li input[type="radio"]:checked ~ .service-content-wpr{
+        height: auto;
     }
 
     .skim-about-us .des{
@@ -457,6 +475,11 @@
         gap: 50px;
     }
 
+    .services-2 li label h5{
+        font-size: 18px;
+        line-height: 19px;
+    }
+
 }
 
 /* Max Width 416px */
@@ -496,6 +519,16 @@
         object-fit: cover;
         object-position: center;
         border-radius: 0 0 30px 30px;
+    }
+    
+    .service-items.grid-list{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .single-feature .content h6{
+        font-size: 18px;
+        line-height: 19px;
     }
 
 }
