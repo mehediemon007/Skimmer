@@ -178,6 +178,14 @@
         padding: 0 24px;
     }
 
+    .services-2 .sec-title{
+        max-width: 90%;
+    }
+
+    .services-2 .sec-des{
+        max-width: 32%;
+    }
+
     .skim-contact.contact-sec .sec-title{
         font-size: 40px;
     }
@@ -331,7 +339,7 @@
     }
 
     .services-2 .service-content p{
-        padding-bottom: 0;
+        padding: 24px 24px 0 24px;
         margin-bottom: 0;
     }
 
@@ -354,6 +362,31 @@
     .single-review {
         max-width: 100%;
         padding: 0;
+    }
+
+    .quote-wpr{
+        max-width: 100%;
+        padding: 80px 0 60px;
+    }
+
+    .quote-wpr p::before{
+        content: url("../images/photos/icons/quote-up-sm.svg");
+        top: -60px;
+        left: 0;
+    }
+
+    .quote-wpr p::after{
+        content: url("../images/photos/icons/quote-down-sm.svg");
+        bottom: -60px;
+        right: 0;
+    }
+
+    .services-2 .sec-title{
+        max-width: 100%;
+    }
+
+    .services-2 .sec-des{
+        max-width: 44%;
     }
 
     .skim-contact.contact-sec .sec-title{
@@ -443,6 +476,8 @@
     }
 
     .service-list li .label-arrow{
+        display: inline-flex;
+        flex: 1 0 auto;
         width: 62px;
         height: 62px;
     }
@@ -454,6 +489,23 @@
     .service-list li .content-image img{
         height: 301px;
         margin-bottom: 32px;
+    }
+
+    .quote-wpr p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .quote-wpr p::before{
+        top: -70px;
+    }
+
+    .quote-wpr p::after{
+        bottom: -70px;
+    }
+
+    .services-2 .sec-des {
+        max-width: 55%;
     }
 
     .skim-contact .sec-des{
@@ -491,6 +543,13 @@
         height: 40px;
     }
 
+}
+
+/* Max Width 480px */
+@media only screen and (max-width:480px){
+    .services-2 .sec-des {
+        max-width: 65%;
+    }
 }
 
 /* Max Width 416px */
@@ -547,61 +606,24 @@
        line-height: 24px;
     }
 
+    .services-2 .sec-des {
+        max-width: 78%;
+    }
+
 }
 
 /* Max Width 380px */
 
 @media only screen and (max-width:380px){
-
-    h2 {
-        line-height: 40px;
-    }
-
-    .lang-switcher{
-        margin-right: 10px;
-    }
-
-    .banner-4 .banner-title, 
-    .banner-5 .banner-title{
-        font-size: 38px;
-        line-height: 55px;
-    }
-
-    .sec-heading-1 .sec-title{
-        font-size: 28px;
-        line-height: 35px;
-    }
-
-    .skim-filters .filter-tab-content .filter-form{
-        grid-template-columns: 1fr;
-    }
-
-    .property-category-5 .property-tab-links .nav-link{
-        font-size: 18px;
+    
+    .services-2 .sec-des {
+        max-width: 85%;
     }
 
     .contact-2 .contact-wpr{
         padding: 30px 20px;
     }
 
-    .skim-property-features .feature-list,
-    .amenety-list{
-        column-count: 1;
-    }
-
-    .single-property-details .property-content .meta-data{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .terms-conditions-list li{
-        grid-template-columns: 1fr;
-        grid-gap: 16px;
-    }
-
-    .log-form-conatiner h2{
-        max-width: 78%;
-    }
 }
 
 /* Max Width 320px */
