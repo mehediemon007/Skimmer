@@ -77,6 +77,17 @@
         nav:true,
         navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
         margin:24,
+        responsive:{
+            0:{
+                items: 1,
+            },
+            576:{
+                items: 2,
+            },
+            992:{
+                items: 3,
+            }
+        }
     })
 
     // Slider Two Column
@@ -89,9 +100,11 @@
         responsive:{
             0:{
                 items: 1,
+                nav: true
             },
             992:{
                 items: 2,
+                nav: false
             }
         }
     })
@@ -104,9 +117,11 @@
         responsive:{
             0:{
                 items: 1,
+                nav: true,
             },
             992:{
                 items: 2,
+                nav:false,
             }
         }
     })

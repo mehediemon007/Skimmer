@@ -87,6 +87,11 @@
 
 @media only screen and (min-width:992px){
 
+    .skim-nav-menu li a.active{
+        border-bottom: 1px solid var(--white-color);
+        border-radius: 30px;
+    }
+
     .skim-nav-menu .social-links{
         display: none;
     }
@@ -158,47 +163,19 @@
 /* Max Width 1199px */
 
 @media only screen and (max-width:1199px){
-    
-    .carousel-right{
-        position: relative;
-        padding-left: calc((100% - 960px) / 2 + 15px);
-        padding-right: 0;
-    }
-
-    .carousel-left{
-        position: relative;
-        padding-right: calc((100% - 960px) / 2 + 15px);
-        padding-left: 0;
-    }
-
-    .carousel-right .owl-nav .owl-prev,
-    .carousel-right .owl-nav .owl-next,
-    .carousel-left .owl-nav .owl-prev,
-    .carousel-left .owl-nav .owl-next{
-        right: calc((100% - 960px) / 2 + 15px);
-    }
-
-    .carousel-right .owl-nav .owl-prev,
-    .carousel-left .owl-nav .owl-prev{
-        right: calc((100% - 960px) / 2 + 55px);
-    }
-
-    .carousel-2.carousel-right .owl-nav .owl-prev, 
-    .carousel-2.carousel-left .owl-nav .owl-prev{
-        right: calc((100% - 960px) / 2 + 120px);
-    }
-
-    .home-4 .owl-carousel .owl-nav .owl-next{
-        right: 40%;
-    }
-
-    .sec-heading-5{
-        max-width: 38%;
-    }
 
     .skim-nav-wpr,
     .skim-nav-menu{
         gap: 30px;
+    }
+
+    .skim-about-us .des{
+        padding: 0 50px;
+    }
+
+    .single-review {
+        max-width: 90%;
+        padding: 0 24px;
     }
 
     .skim-contact.contact-sec .sec-title{
@@ -210,6 +187,18 @@
 /* Max Width 991px */
 
 @media only screen and (max-width:991px){
+
+    .sec-spacer{
+        padding: 80px 0 !important;
+    }
+
+    .sec-spacer-top {
+        padding-top: 80px;
+    }
+
+    .mt-70 {
+        margin-top: 50px;
+    }
 
     .skim-header{
         padding: 16px 0;
@@ -322,6 +311,27 @@
 
     /* Mobile Menu End */
 
+    .services-1 .sec-title{
+        margin-bottom: 50px;
+    }
+
+    .service-list li input[type="radio"]:checked ~ .service-content-wpr{
+        height: 410px;
+    }
+
+    .skim-about-us .des{
+        padding: 0;
+    }
+
+    .skim-testimonial .sec-title{
+        margin-bottom: 50px;
+    }
+
+    .single-review {
+        max-width: 100%;
+        padding: 0;
+    }
+
     .skim-contact.contact-sec .sec-title{
         font-size: 44px;
         max-width: 80%;
@@ -380,7 +390,8 @@
         line-height: 32px;
     }
     
-    h2{
+    h2,
+    .skim-contact.contact-sec .sec-title{
         font-size: 24px;
         line-height: 28px;
     }
@@ -397,11 +408,36 @@
         margin: 16px 0;
     }
 
+    .service-list li .label-content div.col-8{
+        display: none;
+    }
+
+    .service-list li label h5,
+    .single-review .review-msg{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .service-list li .label-arrow{
+        width: 62px;
+        height: 62px;
+    }
+
+    .service-list li input[type="radio"]:checked ~ .service-content-wpr{
+        height: auto;
+    }
+
+    .service-list li .content-image img{
+        height: 301px;
+        margin-bottom: 32px;
+    }
+
     .skim-contact .sec-des{
         max-width: 80%;
     }
 
-    .skim-contact-form{
+    .skim-contact-form,
+    .contact-sec .skim-contact-form{
         width: 100%;
     }
 
@@ -416,6 +452,11 @@
         margin: 0 auto;
     }
 
+    .skim-counter-wpr{
+        flex-direction: column;
+        gap: 50px;
+    }
+
 }
 
 /* Max Width 416px */
@@ -423,7 +464,9 @@
 @media only screen and (max-width:416px){
 
     .skim-contact .sec-title,
-    .skim-contact .sec-des{
+    .skim-contact.contact-sec .sec-title
+    .skim-contact .sec-des,
+    .skim-contact.contact-sec .sec-des{
         max-width: 100%;
     }
 
