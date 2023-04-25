@@ -816,6 +816,10 @@ input::-webkit-inner-spin-button {
     Service List
 -------------------------------------*/
 
+.services-1{
+    background-color: var(--dark-color);
+}
+
 .service-list li{
     display: block;
     width: 100%;
@@ -850,6 +854,10 @@ input::-webkit-inner-spin-button {
     font: var(--font-weight-normal) 28px/42px var(--body-font);
 }
 
+.services-1 *{
+    color: #f8f8f8;
+}
+
 .service-list li .label-arrow{
     display: flex;
     justify-content: center;
@@ -860,7 +868,11 @@ input::-webkit-inner-spin-button {
     border-radius: 50%;
 }
 
-.service-list li .label-arrow img{
+.services-1 .label-arrow{
+    border-color: #f8f8f8;
+}
+
+.label-arrow img{
     opacity: .2;
 }
 
@@ -869,9 +881,14 @@ input::-webkit-inner-spin-button {
     border-color: var(--primary-color);
 }
 
-.service-list input[type="radio"]:checked + label .label-arrow img{
+.service-list input[type="radio"]:checked + label .label-arrow img,
+.service-list input[type="radio"]:checked + label .label-arrow svg{
     opacity: 1;
     transform: rotate(180deg);
+}
+
+input[type="radio"]:checked + label .label-arrow path{
+    stroke: var(--dark-color);
 }
 
 .service-content-wpr{
@@ -902,6 +919,10 @@ input::-webkit-inner-spin-button {
     font: var(--font-weight-normal) 16px/24px var(--body-font);
     color: var(--dark-color);
     padding: 0 0 16px 32px;
+}
+
+.services-1 .service-list .service-items li{
+    color:#f8f8f8;
 }
 
 .service-list li .service-items li::before{
