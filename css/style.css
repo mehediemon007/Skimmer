@@ -775,6 +775,11 @@ input::-webkit-inner-spin-button {
     background-size: 100% 100%;
 }
 
+.service-banner{
+    background: url("../images/banner/service-banner.jpg") no-repeat top left;
+    background-size: 100% 100%;
+}
+
 .cont-banner{
     background: url("../images/banner/cont-banner.jpg") no-repeat top left;
     background-size: 100% 100%;
