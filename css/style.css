@@ -998,6 +998,34 @@ input[type="radio"]:checked + label .label-arrow path{
 }
 
 /* -----------------------------------
+    Features
+-------------------------------------*/
+
+.skim-features .sec-title{
+    max-width: 70%;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.single-feature{
+    position: relative;
+    border: 1px solid #B4B4B4;
+    border-radius: 24px 24px 0px 0px;
+    padding: 32px 8px;
+    text-align: center;
+}
+
+.single-feature::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary-color);
+}
+
+/* -----------------------------------
     About Us
 -------------------------------------*/
 
@@ -1055,6 +1083,16 @@ input[type="radio"]:checked + label .label-arrow path{
     line-height: 46px;
 }
 
+.skim-about-service .content h3{
+    font: 300 28px/29px var(--body-font);
+    margin-bottom: 24px;
+}
+
+.skim-about-service .content p{
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
 /* -----------------------------------
     Counters
 -------------------------------------*/
@@ -1085,6 +1123,33 @@ input[type="radio"]:checked + label .label-arrow path{
 /* -----------------------------------
     Testimonial
 -------------------------------------*/
+
+.quote-wpr{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+.quote-wpr p{
+    position: relative;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.quote-wpr p::before{
+    position: absolute;
+    content: url("../images/photos/icons/quote-up.svg");
+    top: 0;
+    left: -120px;
+}
+
+.quote-wpr p::after{
+    position: absolute;
+    content: url("../images/photos/icons/quote-down.svg");
+    bottom: 0;
+    right: -120px;
+}
 
 .skim-testimonial{
     position: relative;
