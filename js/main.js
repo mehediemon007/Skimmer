@@ -59,14 +59,12 @@
 
     $(".testi-slider").owlCarousel({
         items:1,
-        loop:true,
         nav:true,
         navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
     })
 
     $(".blogs-slider").owlCarousel({
         items:1,
-        loop:true,
         nav:true,
         navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
     })
@@ -75,7 +73,6 @@
 
     $(".social-slider").owlCarousel({
         items:3,
-        loop:true,
         dots:false,
         nav:true,
         navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
@@ -86,7 +83,6 @@
 
     $(".blog-slider").owlCarousel({
         items:2,
-        loop:true,
         nav:false,
         navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
         margin:24,
@@ -102,7 +98,6 @@
 
     $(".skiff-slider").owlCarousel({
         items:2,
-        loop:true,
         nav:false,
         navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
         margin:24,
