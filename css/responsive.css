@@ -201,92 +201,10 @@
         gap: 30px;
     }
 
-    .lang-switcher{
-        margin-right: 30px;
-    }
-
-    .banner-2 .banner-title{
+    .skim-contact.contact-sec .sec-title{
         font-size: 40px;
-        line-height: 50px;
     }
 
-    .banner-4 .banner-title, 
-    .banner-5 .banner-title{
-        font-size: 44px;
-    }
-
-    .banner-5 .banner-title,
-    .banner-5 .banner-des{
-        max-width: 70%;
-    }
-
-    .banner-5 .bg-shape{
-        top: 30px;
-    }
-
-    .banner-5 .banner-cards{
-        margin: 150px 0 110px;
-    }
-
-    .about-us-3 .about-image{
-        height: 550px;
-        background-position: left center;
-    }
-
-    .features-2 .single-feature{
-        padding: 40px 24px;
-    }
-
-    .features-3 .feature-image{
-        position: relative;
-        height: 550px;
-        background: url("../images/banner/feature-banner.jpg") no-repeat center bottom;
-        background-size: cover;
-    }
-
-    .overlay-text-2{
-        right: 0;
-    }
-
-    .about-us-3 .overlay-text-2.experience-text{
-        right: 20px;
-    }
-
-    .features-3 .overlay-text-2.experience-text{
-        left: 0;
-    }
-
-    .features-3 .overlay-text-2{
-        left: 24px;
-    }
-    
-    .property-list .single-property{
-        grid-template-columns: 1fr 1.75fr;
-    }
-
-    .property-list .property-image img{
-        height: 100%;
-    }
-
-    .property-grid .property-content .price,
-    .property-list .property-content .price{
-        margin-bottom: 20px;
-    }
-
-    .sidebar-properties .meta-data p{
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .skim-privacy-policy .sec-spacer-x{
-        padding: 0;
-    }
-
-    .filter-tab-content .filter-form .input-grp{
-        width: max-content;
-        padding: 0 24px;
-    }
 }
 
 /* Max Width 991px */
@@ -403,6 +321,23 @@
     }
 
     /* Mobile Menu End */
+
+    .skim-contact.contact-sec .sec-title{
+        font-size: 44px;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .skim-contact.contact-sec .sec-des{
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contact-sec .skim-contact-form{
+        width: 558px;
+        margin: 50px auto 0;
+    }
 
     .contact-info{
         gap: 32px;

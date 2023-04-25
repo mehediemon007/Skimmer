@@ -57,7 +57,14 @@
 
     // Slider One Column
 
-     $(".testi-slider").owlCarousel({
+    $(".testi-slider").owlCarousel({
+        items:1,
+        loop:true,
+        nav:true,
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
+    })
+
+    $(".blogs-slider").owlCarousel({
         items:1,
         loop:true,
         nav:true,
