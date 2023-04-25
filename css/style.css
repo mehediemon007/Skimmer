@@ -770,8 +770,14 @@ input::-webkit-inner-spin-button {
     padding: 140px 0 45px;
 }
 
+.about-banner{
+    background: url("../images/banner/about-banner.jpg") no-repeat top left;
+    background-size: 100% 100%;
+}
+
 .cont-banner{
     background: url("../images/banner/cont-banner.jpg") no-repeat top left;
+    background-size: 100% 100%;
 }
 
 .banner-content .main-content{
@@ -780,11 +786,10 @@ input::-webkit-inner-spin-button {
 }
 
 .banner-title{
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .home-banner .banner-title{
-    color: var(--primary-color);
     margin-bottom: 40px;
 }
 
