@@ -639,7 +639,7 @@ input::-webkit-inner-spin-button {
 }
 
 .sec-spacer-top {
-    padding-top: 132px;
+    padding-top: 120px;
 }
 
 .sec-spacer-top-85 {
@@ -816,8 +816,22 @@ input::-webkit-inner-spin-button {
     Service List
 -------------------------------------*/
 
-.services-1{
+.services-1,
+.services-2{
     background-color: var(--dark-color);
+}
+
+.services-2 .sec-title{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.services-2 .sec-des{
+    max-width: 26%;
+    font-weight: 300;
+    color: var(--white-color);
+    margin: 32px auto 80px;
+    text-align: center;
 }
 
 .service-list li{
@@ -825,6 +839,10 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: auto;
     overflow: hidden;
+}
+
+.services-2 .service-list li:not(:last-of-type){
+    margin-bottom: 24px;
 }
 
 .service-list li input[type="radio"]{
@@ -838,6 +856,15 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     user-select: none;
     transition: 0.45s;
+}
+
+.services-2 .service-list li label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #B4B4B4;
+    border-radius: 100px;
+    padding: 24px;
 }
 
 .service-list li:last-child label{
@@ -854,7 +881,12 @@ input::-webkit-inner-spin-button {
     font: var(--font-weight-normal) 28px/42px var(--body-font);
 }
 
-.services-1 *{
+.services-2 li label h5{
+    font-weight: 300;
+}
+
+.services-1 *,
+.services-2 *{
     color: #f8f8f8;
 }
 
@@ -872,6 +904,14 @@ input::-webkit-inner-spin-button {
     border-color: #f8f8f8;
 }
 
+.services-2 .label-arrow{
+    background-color: #f8f8f8;
+}
+
+.services-2 .label-arrow i{
+    color: var(--dark-color);
+}
+
 .label-arrow img{
     opacity: .2;
 }
@@ -881,10 +921,18 @@ input::-webkit-inner-spin-button {
     border-color: var(--primary-color);
 }
 
+.services-2 input[type="radio"]:checked + label .label-arrow{
+    background-color: #f8f8f8;
+}
+
 .service-list input[type="radio"]:checked + label .label-arrow img,
 .service-list input[type="radio"]:checked + label .label-arrow svg{
     opacity: 1;
     transform: rotate(180deg);
+}
+
+.service-list input[type="radio"]:checked + label .label-arrow i::before{
+    content: "\f068";
 }
 
 input[type="radio"]:checked + label .label-arrow path{
@@ -903,9 +951,18 @@ input[type="radio"]:checked + label .label-arrow path{
     padding: 40px 0;
 }
 
+.services-2 li input[type="radio"]:checked ~ .service-content-wpr{
+    height: 120px;
+    padding: 0;
+}
+
 .service-content p{
     font-weight: 300;
     margin-bottom: 28px;
+}
+
+.services-2 .service-content p{
+    padding: 24px 80px 24px 24px;
 }
 
 .service-items.grid-list{
