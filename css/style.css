@@ -92,7 +92,7 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    font-size: 40px;
     line-height: 42px;
 }
 
@@ -208,6 +208,10 @@ input:-webkit-autofill {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: transparent;
     background-clip: text;
+}
+
+.pt-90 {
+    padding-top: 90px !important;
 }
 
 .pt-100 {
@@ -631,7 +635,7 @@ input::-webkit-inner-spin-button {
 }
 
 .sec-spacer {
-    padding: 120px 0;
+    padding: 120px 0 !important;
 }
 
 .sec-spacer-top {
@@ -777,6 +781,11 @@ input::-webkit-inner-spin-button {
 
 .banner-title{
     color: var(--white-color);
+}
+
+.home-banner .banner-title{
+    color: var(--primary-color);
+    margin-bottom: 40px;
 }
 
 .banner-des{
@@ -971,492 +980,146 @@ input::-webkit-inner-spin-button {
 }
 
 /* -----------------------------------
-    11. About Us
+    About Us
 -------------------------------------*/
 
-.about-us-content h3{
-    font-size: 29px;
-    line-height: 40.6px;
-}
-
-.about-us-content h6{
-    color: var(--alternative-color);
-}
-
-.about-us-content .achivement-counter{
-    background-color: rgba(237,237,237,.3);
-    padding: 24px 50px;
-    margin: 28px 0;
-}
-
-.info-list li{
-    position: relative;
-    margin-bottom: 8px;
-    padding-left: 32px;
-}
-
-.info-list li::before{
-    position: absolute;
-    content: "\f00c";
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    color: #1980FA;
-    font-size: 16px;
-    font-family: "Font Awesome 6 Free";
-    font-weight: var(--font-weight-semi-bold);
-    background-color: #ECF4FE;
-    border-radius: 50%;
+.skim-about-us .sec-sub-title{
+    font: 300 28px/29px var(--body-font);
+    margin-top: 24px;
     text-align: center;
-    line-height: 32px;
 }
 
-.overlay-text{
-    position: absolute;
-    width: 290px;
-    left: 28px;
-    bottom: 40px;
-    background-color: rgba(255,255,255,.88);
-    padding: 30px 38px;
+.skim-about-us .des{
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--dark-color);
+    margin: 50px 0;
+    padding: 0 80px;
+    text-align: center;
 }
 
-.overlay-text-2{
-    position: absolute;
-    top: 40%;
-    right: -50px;
-    width: 250px;
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    grid-column-gap: 8px;
-    background-color: var(--white-color);
-    box-shadow: 0px 7px 55px rgba(9, 16, 20, 0.12);
+.skim-about-us .skim-btn{
+    margin-top: 38px;
+}
+
+/* -----------------------------------
+    About Skiff
+-------------------------------------*/
+
+.single-skiff{
+    border: 1px solid #B4B4B4;
+    border-bottom: 8px solid var(--primary-color);
+    border-radius: 24px 24px 0px 0px;
     padding: 20px;
-}
-
-.overlay-text::before{
-    position: absolute;
-    content: url("../images/photos/icons/color-quote.svg");
-    top: -25px;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: var(--white-color);
-    border-radius: 50%;
     text-align: center;
-    line-height: 60px;
-    transform: translateX(-50%);
 }
 
-.overlay-text p{
-    font: var(--font-weight-medium) 20px/32px var(--title-font);
-    color: var(--primary-color);
-}
-
-.overlay-text-2 p{
-    font: var(--font-weight-medium) 14px/21px var(--title-font);
-    color: var(--primary-color);
-}
-
-.about-us-3 .about-us-content h3,
-.about-us-4 .about-us-content h3{
-    font-size: 35px;
-    line-height: 50.4px;
-}
-
-.about-us-5 .about-us-content h3{
-    font-size: 38px;
-    line-height: 54.72px;
-}
-
-.about-us-1 .about-us-content p,
-.about-us-3 .about-us-content p{
-    max-width: 90%;
-}
-
-.about-us-1 .info-list{
+.single-skiff .skiff-image{
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    background-color: var(--primary-color);
-    padding: 30px 45px 15px;
-    margin: 30px 0;
-    z-index: 1;
-}
-
-.about-us-1 .info-list::before{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: url("../images/about/about-abstract.png") no-repeat center;
-    background-size: cover;
-    z-index: -1;
-}
-
-.about-us-3 .info-list li{
-    margin-bottom: 24px;
-}
-
-.about-us-4 .info-list li{
-    padding-left: 60px;
-    margin-bottom: 14px;
-}
-
-.about-us-1 .info-list li::before{
-    content: url(../images/photos/icons/icon-rocket.svg);
-    background-color: transparent;
-    line-height: 40px;
-}
-
-.about-us-3 .info-list li::before{
-    top: 5px;
-    width: 22px;
-    height: 22px;
-    line-height: 22px;
-}
-
-.about-us-4 .info-list li::before{
-    color: var(--secondary-color);
-    background-color:  #D8FCFF;
-}
-
-.about-us-4 .info-list h5{
-    font: var(--font-weight-medium) 20px var(--title-font);
-    margin-bottom: 8px;
-}
-
-.about-us-1 .info-list p{
-    max-width: 100%;
-    color: var(--light-white-color);
-}
-
-.about-us-3 .about-image{
-    position: relative;
-    height: 100%;
-    background: url("../images/about/about-2.jpg") no-repeat center;
-    background-size: cover;
-}
-
-.about-us-2 .single-counter h3{
-    font-size: 35px;
-    line-height: 52.5px;
-}
-
-.about-us-3 .single-counter h2{
-    font-size: 35px;
-    line-height: 52.5px;
-    color: var(--secondary-color);
-}
-
-.about-us-3 .single-counter p{
-    font: var(--font-weight-semi-bold) 16px/24px var(--title-font);
-    color: var(--primary-color);
-}
-
-.about-us-3 .overlay-text-2.experience-text{
-    top: 60%;
-    right: -100px;
-}
-
-/* -----------------------------------
-    12. Counters
--------------------------------------*/
-
-.counters-wpr{
-    max-width: 70%;
-    background-color: var(--primary-color);
-    padding: 70px 70px;
-    margin: 0 auto;
-}
-
-.single-counter h3{
-    background: var(--secondary-color);
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.counters-1{
-    position: relative;
-    background: url("../images/banner/counter-banner.jpg") no-repeat center;
-    background-size: cover;
-    padding: 135px 0;
-    z-index: 1;
-}
-
-.counters-1::before{
-    position: absolute;
-    content: "";
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(72,72,72,.35);
-    z-index: -1;
-}
-
-.counters-1 .single-counter{
-    display: grid;
-    grid-template-columns: 90px 140px;
-    grid-column-gap: 10px;
-    margin-bottom: 50px;
-}
-
-.counters-2 .single-counter{
-    margin-bottom: 80px;
-}
-
-.counters-1 .single-counter h2{
-    color: var(--secondary-color);
-}
-
-.counters-2 .single-counter h2{
-    font-size: 40px;
-    line-height: 60px;
-    color: var(--alternative-color);
-}
-
-.counters-1 .single-counter p{
-    color: var(--white-color);
-}
-
-.counters-2 .single-counter p{
-    font-size: 22px;
-    line-height: 33px;
-    color: var(--title-color);
-}
-
-.counters-1 .brands-wpr{
-    border-top: 1px solid rgba(72,72,72,.8);
-    padding: 40px 0 0;
-}
-
-.counters-1 .brands-wpr .single-brand{
-    width: 120px;
-}
-
-/* -----------------------------------
-    13. Property Category
--------------------------------------*/
-
-.property-tab-links .nav-link{
-    font: var(--font-weight-medium) 16px/19.2px var(--title-font);
-    color: var(--primary-color);
-    border: 1px solid transparent;
-    padding: 5px;
-    margin-left: 35px;
-}
-
-.property-tab-links .nav-link.active{
-    color: var(--secondary-color);
-    border-bottom-color: var(--secondary-color);
-}
-
-.property-tab-content .single-property,
-.property-tab-content .property-image,
-.property-tab-content .property-image img{
-    height: 100%;
-}
-
-.image-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all .5s;
-}
-
-.property-types{
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 40px;
-}
-
-.nav-shape{
-    position: relative;
-    top: 20px;
-    margin-left: 24px;
-}
-
-.property-category-5 .property-tab-links .nav-link{
-    position: relative;
-    display: inline-block;
-    font-size: 23px;
-    color: var(--title-color);
-    line-height: 27.6px;
-    padding: 16px 0;
-    margin-left: 0;
-    border: none;
-}
-
-.property-category-5 .property-tab-links .nav-link.active{
-    color: var(--alternative-color);
-}
-
-.property-category-5 .property-tab-links .nav-link.active::after{
-    position: absolute;
-    content: "";
-    top: 50%;
-    right: -70px;
-    width: 48px;
-    height: 1px;
-    background-color: var(--alternative-color);
-}
-
-/* -----------------------------------
-    14. Testimonial
--------------------------------------*/
-
-.testimonial-1{
-    background-color: var(--primary-color);
-}
-
-.testimonial-1 .brands-wpr{
-    padding: 60px 0 80px;
-}
-
-.brands-2 .single-brand img{
-    opacity: .5;
-}
-
-.single-review-2{
-    background-color: var(--white-color);
-    box-shadow: 0px 7px 55px rgba(9, 16, 20, 0.06);
-    padding: 24px;
-}
-
-.testimonial-5 .single-review-2{
-    padding: 50px 14px 32px 32px;
-}
-
-.single-review-2 .client-desig{
-    display: grid;
-    grid-template-columns: 60px max-content;
-    grid-column-gap: 16px;
     margin-bottom: 16px;
 }
 
-.single-review-2 .client-desig p{
-    font-size: 14px;
-    line-height: 16.94px;
-    color: #647589;
-    margin: 4px 0;
-}
-
-.reviews-2 .review-ratings img,
-.single-review-2 .client-details img{
-    width: auto;
-}
-
-.review-msg{
-    position: relative;
-    font: var(--font-weight-medium) 20px/38px var(--body-font);
-    padding: 0 50px 0 75px;
-}
-
-.single-review-2 .review-msg{
-    font: var(--font-weight-normal) 12px/22.8px var(--body-font);
-    color: #112200;
-    padding: 0;
-}
-
-.testimonial-5 .single-review-2 .review-msg{
-    color: var(--text-color);
-    margin-bottom: 24px;
-}
-
-.review-msg::before{
+.single-skiff .skiff-name{
     position: absolute;
-    content: url("../images/photos/icons/quote.svg");
-    top: -40px;
-    left: 50px;
+    width: 100%;
+    bottom: 24px;
+    font-size: 40px;
+    line-height: 42px;
+    color: var(--white-color);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.single-review-2 .review-msg::before{
-    content: none;
+.single-skiff .skim-btn{
+    width: 182px;
+    height: 46px;
+    line-height: 46px;
 }
 
-.testimonial-5 .review-msg::before{
-    content: url("../images/photos/icons/quote-2.svg");
-    top: -25px;
-    left: -24px;
+/* -----------------------------------
+    Counters
+-------------------------------------*/
+
+.skim-counter-wpr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 75px;
 }
 
-.reviews-1{
-    padding: 110px 0;
-    border-bottom: 1px solid rgba(237,237,237,.4);
+.skim-counter-wpr .single-counter{
+    text-align: center;
 }
 
-.reviews-1 .client-desig p{
-    background: linear-gradient(109.62deg, #FFAD6E 6.45%, #FF892F 89.54%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.reviews-2 .card-content{
-    position: relative;
-    box-shadow: 0px 7px 55px rgba(9, 16, 20, 0.06);
-    border-left: 4px solid var(--secondary-color);
-    padding: 35px 40px;
+.single-counter h3{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     margin-bottom: 24px;
 }
 
-.reviews-2 .card-content:last-child{
-    border-left: none;
-    border-right: 4px solid var(--secondary-color);
+.single-counter p{
+    font: 300 18px/25px var(--body-font);
+    color: var(--dark-color);
 }
 
-.reviews-2 .card-content h4{
-    font-size: 24px;
-    color: var(--primary-color);
+/* -----------------------------------
+    Testimonial
+-------------------------------------*/
+
+.skim-testimonial{
+    position: relative;
+    background-color: var(--dark-color);
+    z-index: 1;
 }
 
-.reviews-2 .card-content P{
-    font-size: 14px;
-    color: var(--text-color);
-    margin-top: 10px;
-}
-
-.reviews-2 .review-msg{
-    color: var(--primary-color);
-    padding: 0;
-    padding-left: 10px;
-}
-
-.reviews-2 .review-msg::before{
-    content: url("../images/photos/icons/quote-2.svg");
-    top: -30px;
-    left: 0;
-}
-
-.reviews-2 .client-desig::before{
+.skim-testimonial::before{
     position: absolute;
     content: "";
-    width: 45px;
-    height: 1px;
-    top: 12px;
-    left: 0;
-    background-color: var(--primary-color);
+    top: 90px;
+    left: 50%;
+    width: 60%;
+    height: 100%;
+    background: url("../images/photos/testi-bg.png") no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
 }
 
-.testimonial-2 .reviews-2 .owl-dots{
-    display: block;
-    margin-top: 50px;
+.skim-testimonial .sec-title{
+    color: var(--primary-color);
+    margin-bottom: 80px;
 }
 
-.testimonial-2 .owl-carousel .owl-dot.active{
-    background-color: var(--secondary-color) !important;
+.single-review{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 32px;
 }
 
-.testimonial-3 .reviews-wpr .container .owl-nav{
-    display: none;
+.single-review .review-msg{
+    font-size: 28px;
+    line-height: 42px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.single-review .reviewer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 40px 0;
+}
+
+.reviewer .review-image{
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.reviewer .name{
+    color: var(--white-color);
 }
 
 /* -----------------------------------
@@ -1474,6 +1137,12 @@ input::-webkit-inner-spin-button {
     margin-bottom: 28px;
 }
 
+.skim-contact.contact-sec .sec-title,
+.skim-contact.contact-sec .sec-des{
+    max-width: 100%;
+    text-align: left;
+}
+
 .skim-contact .sec-des{
     max-width: 50%;
     text-align: center;
@@ -1483,6 +1152,11 @@ input::-webkit-inner-spin-button {
 .skim-contact-form{
     width: 558px;
     margin: 50px auto 0;   
+}
+
+.contact-sec .skim-contact-form{
+    width: 460px;
+    margin: 0 auto;
 }
 
 .contact-info{
@@ -1622,6 +1296,8 @@ input::-webkit-inner-spin-button {
 
 .blog-content .date img,
 .blog-content .meta-data img{
+    display: inline-block;
+    width: auto;
     margin-right: 4px;
     vertical-align: bottom;
 }

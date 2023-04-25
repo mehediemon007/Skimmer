@@ -83,38 +83,56 @@
 
     }
 
-    // Slider One Column
+     // Slider One Column
 
-    $(".sliderOneCol").owlCarousel({
+     $(".testi-slider").owlCarousel({
         items:1,
         loop:true,
-        dots:false,
         nav:true,
-        navText : ["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
-        margin:30,
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
     })
 
     // Slider Three Column
 
-    $(".sliderThreeCol").owlCarousel({
+    $(".social-slider").owlCarousel({
         items:3,
         loop:true,
-        dots:true,
+        dots:false,
         nav:true,
-        navText : ["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
-        margin:30,
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
+        margin:24,
+    })
+
+    // Slider Two Column
+
+    $(".blog-slider").owlCarousel({
+        items:2,
+        loop:true,
+        nav:false,
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
+        margin:24,
         responsive:{
             0:{
                 items: 1,
-                dotsEach: 3
-            },
-            480:{
-                items: 1.5,
-                dotsEach: 3
             },
             992:{
-                items: 3,
-                dotsEach: 2,
+                items: 2,
+            }
+        }
+    })
+
+    $(".skiff-slider").owlCarousel({
+        items:2,
+        loop:true,
+        nav:false,
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
+        margin:24,
+        responsive:{
+            0:{
+                items: 1,
+            },
+            992:{
+                items: 2,
             }
         }
     })
@@ -126,7 +144,7 @@
         loop:true,
         dots:false,
         nav:true,
-        navText : ["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
         responsive:{
             0:{
                 items: 1,
@@ -154,7 +172,7 @@
         loop:true,
         margin:20,
         nav:true,
-        navText : ["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
         dots:false,
         responsive:{
             0:{
@@ -185,7 +203,7 @@
         loop:true,
         margin:30,
         nav:true,
-        navText : ["<i class='fa-solid fa-chevron-left'></i>","<i class='fa-solid fa-chevron-right'></i>"],
+        navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
         dots:false,
         rtl:true,
         responsive:{
