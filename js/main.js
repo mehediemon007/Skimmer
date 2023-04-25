@@ -39,21 +39,21 @@
 
     }
 
-    // $('li.menu-item-has-children > a').on('click', function (e) {
+    $('li.menu-item-has-children > a').on('click', function (e) {
 
-    //     e.preventDefault();
+        e.preventDefault();
     
-    //     var thisElement = $(e.target);
+        var thisElement = $(e.target);
     
-    //     if($(thisElement).next('.sub-menu').length){
+        if($(thisElement).next('.sub-menu').length){
 
-    //         $("i",this).toggleClass('fa-angle-down fa-angle-up');
-    //         thisElement.siblings('.sub-menu > li').fadeToggle();
-    //         thisElement.siblings('.sub-menu').slideToggle();
+            $("i",this).toggleClass('fa-angle-down fa-angle-up');
+            thisElement.siblings('.sub-menu > li').fadeToggle();
+            thisElement.siblings('.sub-menu').slideToggle();
 
-    //     }
+        }
         
-    // });
+    });
 
     // Slider One Column
 
