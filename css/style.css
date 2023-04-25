@@ -760,7 +760,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* -----------------------------------
-    05. Banner
+    Banner
 -------------------------------------*/
 
 .skim-banner{
@@ -813,180 +813,76 @@ input::-webkit-inner-spin-button {
 }
 
 /* -----------------------------------
-    Location
+    Service List
 -------------------------------------*/
 
-
-
-/* -----------------------------------
-    08. Property
--------------------------------------*/
-
-.property-locations-2 .card-content p{
-    color: #4C7CE3;
+.faq-list li{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    overflow: hidden;
 }
 
-.property-list .single-property{
-    display: grid;
-    grid-template-columns: 1.75fr 2fr;
-    margin-bottom: 24px;
+.faq-list li input[type="radio"]{
+    display: none;
 }
 
-.property-image .image-overlay{
-    top: 100%;
+.faq-list li label{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-size: 40px;
-    color: var(--white-color);
-    background-image: linear-gradient(360deg, #0F0F0F 0%, rgba(49, 49, 49, 0) 93.77%);
-}
-
-.property-image:hover .image-overlay{
-    top: 0;
-}
-
-.property-image .image-overlay img{
-    width: 40px;
-    height: 40px;
-}
-
-.property-image .image-overlay i{
-    color: var(--white-color);
-}
-
-.single-property .property-content{
-    box-shadow: 18px 5px 55px rgba(9, 16, 20, 0.1);
-    padding: 30px;
-}
-
-.property-list .single-property .property-content{
-    padding: 20px 30px;
-}
-
-.property-content .apart-ads{
-    font-size: 12px;
-    margin-bottom: 2px;
-}
-
-.property-content .meta-data{
-    display: flex;
-    align-items: center;
-    gap:24px;
-    padding: 24px 0 26px;
-    margin-bottom: 24px;
-    border-bottom: 1px solid rgba(100, 117, 137, 0.2);
-}
-
-.property-content .meta-data p{
-    font: var(--font-weight-normal) 14px/16.8px var(--footer-font);
-}
-
-.property-content .meta-data i{
-    background: var(--secondary-color);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.property-content .price{
-    font-size: 28px;
-    line-height: 33.6px;
-    color: var(--secondary-color);
-}
-
-.properties-1 .property-content .price{
-    font-size: 24px;
-    line-height: 28.8px;
-}
-
-.properties-4 .property-content .price{
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    font-family: var(--title-font);
     color: var(--primary-color);
+    line-height: 20.7px;
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(100, 117, 137, 0.4);
+    cursor: pointer;
+    user-select: none;
+    transition: 0.45s;
 }
 
-.properties-5 .property-content .price{
-    color: var(--alternative-color);
-}
-
-.property-content .price sub{
-    font-size: 16px;
-}
-
-.property-content .details-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 112px;
-    height: 40px;
-    gap: 5px;
-    font: var(--font-weight-medium) 12px/17.16px var(--title-font);
-    color: #4C7CE3;
-    text-align: center;
-    line-height: 40px;
-}
-
-.properties-3 .details-btn{
-    border: 1px solid var(--secondary-color);
-}
-
-.properties-4 .details-btn,
-.properties-5 .details-btn{
-    color: var(--white-color);
-    background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-}
-
-.details-btn .arrow{
-    background: #4C7CE3;
-}
-
-.details-btn:hover .arrow{
-    width: 24px;
-}
-
-.properties-4 .details-btn .arrow,
-.properties-5 .details-btn .arrow{
-    background: var(--white-color);
-}
-
-.details-btn .arrow::after{
-    color: #4C7CE3;
-}
-
-.properties-4 .details-btn .arrow::after,
-.properties-5 .details-btn .arrow::after{
-    color: var(--white-color);
-}
-
-.properties-2 .property-content .meta-data{
-    padding: 8px 0 13px;
-}
-
-.properties-2 .meta-data p{
-    color: var(--primary-color);
-}
-
-.property-list .skim-btn,
-.property-grid .skim-btn{
-    position: relative;
-    width: 100px;
-    height: 36px;
+.faq-list li input[type="radio"] ~ label i{
     font-size: 12px;
-    line-height: 36px;
-    z-index: 1;
+    transition: 0.45s;
 }
 
-.property-list .skim-btn::after,
-.property-grid .skim-btn::after{
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 10px;
-    width: 80%;
-    height: 50%;
-    background: linear-gradient(90deg, #709DFF 0%, rgba(18, 93, 255, 0.914896) 116.85%, #4E86FF 116.86%);
-    filter: blur(15px);
-    z-index: -1;
+.faq-list li input[type="radio"]:checked ~ label i.fa-plus::before{
+    content: "\f068";
+}
+
+.faq-list li input[type="radio"]:hover~ label,
+.faq-list li input[type="radio"]:checked ~ label{
+    color: #709DFF;
+}
+
+.faq-content-wpr{
+    width: 100%;
+    overflow-y: hidden;
+    height: 0;
+    transition: 0.4s;
+}
+
+.faq-content-wpr .content{
+    padding: 20px 0;
+}
+
+.faq-list li input[type="radio"]:checked ~ .faq-content-wpr{
+    height: 120px;
+}
+
+.faq-2 .faq-list label{
+    font-size: 22px;
+    font-weight: var(--font-weight-semi-bold);
+    line-height: 1.45;
+}
+
+.faq-2 .content{
+    max-width: 78%;
+    margin-left: 32px;
 }
 
 /* -----------------------------------
