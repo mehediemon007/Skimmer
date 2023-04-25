@@ -1,5 +1,8 @@
 ;(function($){
 
+    // lightcase 
+    $('a[data-rel^=lightcase]').lightcase();
+
     new WOW().init();
 
     // scrollTop init
