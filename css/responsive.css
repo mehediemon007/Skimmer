@@ -200,7 +200,8 @@
         margin-top: 50px;
     }
 
-    .pt-90 {
+    .pt-90,
+    .pt-100 {
         padding-top: 50px !important;
     }
 
@@ -314,6 +315,11 @@
     }
 
     /* Mobile Menu End */
+
+    .skim-media .sec-des,
+    .skim-media .des{
+        max-width: 100%;
+    }
 
     .services-1 .sec-title{
         margin-bottom: 50px;
@@ -529,6 +535,11 @@
     .single-feature .content h6{
         font-size: 18px;
         line-height: 19px;
+    }
+
+    .skim-media .sec-des,
+    .skim-media .des{
+       line-height: 24px;
     }
 
 }
