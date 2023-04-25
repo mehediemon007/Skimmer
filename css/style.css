@@ -60,9 +60,9 @@ img {
 
 p {
     font-family: var(--body-font);
-    color: var(--text-color);
+    color: var(--dark-color);
     font-size: 16px;
-    line-height: 30.4px;
+    line-height: 24px;
     font-weight: var(--font-weight-normal);
     margin-bottom: 0;
 }
@@ -816,73 +816,107 @@ input::-webkit-inner-spin-button {
     Service List
 -------------------------------------*/
 
-.faq-list li{
+.service-list li{
     display: block;
     width: 100%;
     height: auto;
-    margin: 5px 0;
     overflow: hidden;
 }
 
-.faq-list li input[type="radio"]{
+.service-list li input[type="radio"]{
     display: none;
 }
 
-.faq-list li label{
+.service-list li label{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    font-weight: var(--font-weight-medium);
-    font-family: var(--title-font);
-    color: var(--primary-color);
-    line-height: 20.7px;
-    padding: 25px 0;
-    border-bottom: 1px solid rgba(100, 117, 137, 0.4);
+    border-top: 1px solid #B4B4B4;
+    padding: 24px 0;
     cursor: pointer;
     user-select: none;
     transition: 0.45s;
 }
 
-.faq-list li input[type="radio"] ~ label i{
-    font-size: 12px;
-    transition: 0.45s;
+.service-list li:last-child label{
+    border-bottom: 1px solid #B4B4B4;
 }
 
-.faq-list li input[type="radio"]:checked ~ label i.fa-plus::before{
-    content: "\f068";
+.service-list .label-content{
+    display: grid;
+    grid-template-columns: 1fr 64px;
+    align-items: center;
 }
 
-.faq-list li input[type="radio"]:hover~ label,
-.faq-list li input[type="radio"]:checked ~ label{
-    color: #709DFF;
+.service-list li label h5{
+    font: var(--font-weight-normal) 28px/42px var(--body-font);
 }
 
-.faq-content-wpr{
+.service-list li .label-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #B4B4B4;
+    border-radius: 50%;
+}
+
+.service-list li .label-arrow img{
+    opacity: .2;
+}
+
+.service-list input[type="radio"]:checked + label .label-arrow{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.service-list input[type="radio"]:checked + label .label-arrow img{
+    opacity: 1;
+    transform: rotate(180deg);
+}
+
+.service-content-wpr{
     width: 100%;
-    overflow-y: hidden;
     height: 0;
+    overflow-y: hidden;
     transition: 0.4s;
 }
 
-.faq-content-wpr .content{
-    padding: 20px 0;
+.service-list li input[type="radio"]:checked ~ .service-content-wpr{
+    height: 370px;
+    padding: 40px 0;
 }
 
-.faq-list li input[type="radio"]:checked ~ .faq-content-wpr{
-    height: 120px;
+.service-content p{
+    font-weight: 300;
+    margin-bottom: 28px;
 }
 
-.faq-2 .faq-list label{
-    font-size: 22px;
-    font-weight: var(--font-weight-semi-bold);
-    line-height: 1.45;
+.service-items.grid-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 24px;
 }
 
-.faq-2 .content{
-    max-width: 78%;
-    margin-left: 32px;
+.service-list li .service-items li{
+    position: relative;
+    font: var(--font-weight-normal) 16px/24px var(--body-font);
+    color: var(--dark-color);
+    padding: 0 0 16px 32px;
+}
+
+.service-list li .service-items li::before{
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.service-list li .skim-btn{
+    margin-top: 16px;
 }
 
 /* -----------------------------------
