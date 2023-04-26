@@ -126,6 +126,106 @@
         }
     })
 
+    // Single Skiff Slider
+
+    jQuery(document).ready(function() {
+        var skiffPreview = jQuery(".skiff-preview");
+        var skiffThumb = jQuery(".skiff-thumb");
+        var slidesPerPage = 4; //globaly define number of elements per page
+        var syncedSecondary = true;
+    
+        skiffPreview.owlCarousel({
+            items: 1,
+            slideSpeed: 3000,
+            nav: true,
+            navText : ["<i class='fa-solid fa-arrow-left-long'></i>","<i class='fa-solid fa-arrow-right-long'></i>"],
+            animateIn: "fadeIn",
+            autoplayHoverPause: true,
+            autoplaySpeed: 1400,
+            dots: false,
+            loop: false,
+            responsiveRefreshRate: 200,
+
+        }).on("changed.owl.carousel", syncPosition);
+    
+        skiffThumb.on("initialized.owl.carousel", function() {
+
+            skiffThumb .find(".owl-item").eq(0).addClass("current");
+
+        }).owlCarousel({
+            items: slidesPerPage,
+            smartSpeed: 1000,
+            slideSpeed: 1000,
+            slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+            responsiveRefreshRate: 100,
+            responsive:{
+                0:{
+                    items: 3,
+                    margin: 16
+                },
+                768:{
+                    items: slidesPerPage,
+                    margin:32
+                }
+            }
+
+        }).on("changed.owl.carousel", syncPosition2);
+    
+        function syncPosition(el) {
+            //if you set loop to false, you have to restore this next line
+            //var current = el.item.index;
+
+            //if you disable loop you have to comment this block
+            var count = el.item.count - 1;
+            var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+
+            if (current < 0) {
+                current = count;
+            }
+            if (current > count) {
+                current = 0;
+            }
+
+            //end block
+    
+            skiffThumb
+                .find(".owl-item")
+                .removeClass("current")
+                .eq(current)
+                .addClass("current");
+            var onscreen = skiffThumb.find(".owl-item.active").length - 1;
+            var start = skiffThumb
+            .find(".owl-item.active")
+            .first()
+            .index();
+            var end = skiffThumb
+            .find(".owl-item.active")
+            .last()
+            .index();
+        
+            if (current > end) {
+                skiffThumb.data("owl.carousel").to(current, 100, true);
+            }
+            if (current < start) {
+                skiffThumb.data("owl.carousel").to(current - onscreen, 100, true);
+            }
+        }
+    
+        function syncPosition2(el) {
+          if (syncedSecondary) {
+            var number = el.item.index;
+            skiffPreview.data("owl.carousel").to(number, 100, true);
+          }
+        }
+    
+        skiffThumb.on("click", ".owl-item", function(e) {
+          e.preventDefault();
+          var number = jQuery(this).index();
+          skiffPreview.data("owl.carousel").to(number, 300, true);
+        });
+
+    });
+
     $(".owl-dots button").attr('aria-label', 'owlDot');
     $(".owl-nav button").attr('aria-label', 'owlNav');
 

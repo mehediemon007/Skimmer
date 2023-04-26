@@ -125,11 +125,11 @@
         position: absolute;
         display: block !important;
         width: 250px;
-        background: var(--white-color);
+        background: var(--primary-color);
         box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
         opacity: 0;
         visibility: hidden;
-        transform: translateY(50px);
+        transform: translateY(30px);
         transition: transform 0.3s ease-in-out;
         z-index: 99;
     }
@@ -143,7 +143,8 @@
     .sub-menu li a{
         position: relative;
         display: block;
-        font-size: .95rem;
+        font-size: 14px;
+        color: var(--white-color);
         border-bottom: 1px dashed #ededed;
         padding: 10px 15px;
     }
@@ -154,7 +155,6 @@
 
     .sub-menu li a:hover{
         color: var(--secondary-color);
-        padding-left: 20px;
     }
 
     /* Nav Menu End */
@@ -164,9 +164,12 @@
 
 @media only screen and (max-width:1199px){
 
-    .skim-nav-wpr,
-    .skim-nav-menu{
+    .skim-nav-wpr{
         gap: 30px;
+    }
+
+    .skim-nav-menu{
+        gap: 16px;
     }
 
     .skim-about-us .des{
@@ -304,7 +307,7 @@
         line-height: 36px;
         color: var(--white-color);
         padding: 0;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
         text-align: center;
     }
 
@@ -317,9 +320,18 @@
     }
 
     .sub-menu li a{
-        padding: 14px 0;
-        margin-left: 20px;
+        font-size: 20px;
+        color: var(--primary-color);
         border-bottom: 1px dashed #ededed;
+        padding-bottom: 16px;
+    }
+
+    .sub-menu li:not(:last-of-type) a{
+        margin-bottom: 0;
+    }
+
+    .sub-menu li:not(:first-of-type) a{
+        padding-top: 16px;
     }
 
     /* Mobile Menu End */

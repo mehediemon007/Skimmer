@@ -647,6 +647,16 @@ input::-webkit-inner-spin-button {
     background-size: 100% 100%;
 }
 
+.skiff-14-banner{
+    background: url("../images/banner/skiff14-banner.jpg") no-repeat top left;
+    background-size: 100% 100%;
+}
+
+.skiff-16-banner{
+    background: url("../images/banner/skiff16-banner.jpg") no-repeat top left;
+    background-size: 100% 100%;
+}
+
 .banner-content .main-content{
     margin: 60px 0;
     text-align: center;
@@ -1266,7 +1276,25 @@ input[type="radio"]:checked + label .label-arrow path{
 }
 
 /* -----------------------------------
-    18. Footer
+    Skiffs
+-------------------------------------*/
+
+.skiff-preview .owl-nav{
+    margin: 28px 0;
+}
+
+.skiff-thumb .owl-stage{
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skiff-thumb .owl-item{
+    flex: 1 0 auto;
+}
+
+/* -----------------------------------
+    Footer
 -------------------------------------*/
 
 .skim-footer{
