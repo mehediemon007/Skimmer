@@ -536,7 +536,8 @@ input::-webkit-inner-spin-button {
     margin: 132px 0;
 }
 
-.sec-heading .sec-title{
+.sec-heading .sec-title,
+.deck-heading .deck-title{
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -1005,6 +1006,10 @@ input[type="radio"]:checked + label .label-arrow path{
     Testimonial
 -------------------------------------*/
 
+.quote-2{
+    background-color: var(--dark-color);
+}
+
 .quote-wpr{
     max-width: 90%;
     margin: 0 auto;
@@ -1016,6 +1021,14 @@ input[type="radio"]:checked + label .label-arrow path{
     font-size: 28px;
     line-height: 42px;
     text-align: center;
+}
+
+.quote-2 p.single-quote{
+    max-width: 754px;
+    font-weight: 300;
+    color: var(--white-color);
+    text-align: center;
+    margin: 0 auto;
 }
 
 .quote-wpr p::before{
@@ -1291,6 +1304,98 @@ input[type="radio"]:checked + label .label-arrow path{
 
 .skiff-thumb .owl-item{
     flex: 1 0 auto;
+}
+
+.skim-skiff-features{
+    background-color: var(--dark-color);
+}
+
+.feature-cat-links{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.feature-cat-links .nav-link{
+    position: relative;
+    font: var(--font-weight-bold) 16px/16px var(--title-font);
+    color: #B4B4B4;
+    border-bottom: 1px solid #B4B4B4;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+}
+
+.feature-cat-links .nav-link.active{
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.feature-cat-links .nav-link.active::before,
+.feature-cat-links .nav-link.active::after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.feature-cat-links .nav-link.active::after{
+    left: auto;
+    right: 0;
+}
+
+.skiff-features-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 40px;
+}
+
+.skiff-features-list li{
+    position: relative;
+    font-size: 16px;
+    font-weight: var(--font-weight-normal);
+    line-height: 24px;
+    color: var(--white-color);
+    margin-bottom: 12px;
+    padding-left: 32px;
+}
+
+.skiff-features-list li::before{
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.skim-skiff-decks{
+    background-color: var(--dark-color);
+}
+
+.deck-heading .deck-title{
+    color: #f8f8f8;
+    text-align: center;
+}
+
+.deck-heading .deck-des{
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 29px;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 24px 0 60px;
+}
+
+.deck-details .skiff-features-list{
+    grid-template-columns: 1fr;
 }
 
 /* -----------------------------------

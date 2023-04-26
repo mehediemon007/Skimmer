@@ -401,6 +401,14 @@
         max-width: 44%;
     }
 
+    .feature-cat-links{
+        gap: 24px;
+    }
+
+    .deck-content .secondary-btn{
+        margin-right: 24px;
+    }
+
     .skim-contact.contact-sec .sec-title{
         font-size: 44px;
         max-width: 80%;
@@ -520,6 +528,10 @@
         max-width: 55%;
     }
 
+    .deck-content .secondary-btn{
+        margin-right: 0;
+    }
+
     .skim-contact .sec-des{
         max-width: 80%;
     }
@@ -553,6 +565,29 @@
     .play-btn{
         width: 40px;
         height: 40px;
+    }
+
+    .deck-heading .deck-des{
+        font-size: 18px;
+        line-height: 19px;
+        margin: 24px 0 30px;
+    }
+
+    .feature-cat-links{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .feature-cat-links .nav-item{
+        width: 100%;
+    }
+
+    .skiff-features-list{
+        grid-template-columns: 1fr;
+    }
+
+    .quote-2 p.single-quote{
+        max-width: 100%;
     }
 
 }
