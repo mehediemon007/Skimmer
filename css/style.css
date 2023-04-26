@@ -1428,7 +1428,6 @@ input[type="radio"]:checked + label .label-arrow path{
     display: inline-block;
     position: absolute;
     left: 50%;
-    z-index: 999;
     font-size: 18px;
     color: var(--white-color);
     background: var(--primary-color);
@@ -1865,14 +1864,6 @@ input[type="radio"]:checked + label .label-arrow path{
     line-height: 30px;
     margin-top: -5px;
     padding-right: 120px;
-}
-
-#toTop i {
-    display: inline-block;
-}
-
-#toTop:hover {
-    background-color: var(--primary-color);
 }
 
 @keyframes toRightFromLeft {
